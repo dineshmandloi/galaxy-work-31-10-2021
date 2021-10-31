@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+$primary-color:#64cc83;
+
+@mixin Btn($width,$height,$bg) {
+    width:$width;
+    height: $height;
+    background: $bg;
+}
+
+body{
+    background:white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+   
+}
+
+//navbar 
+
+.navbar-brand img{
+    max-width: 80px;
+    width: 100%;
+}
+.navbar-nav .nav-item .nav-link{
+    margin-right: 30px;
+    text-transform: capitalize;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    border-bottom: 2px solid #64cc83;
+    color: #64cc83;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-item.active .nav-link{
+    color: $primary-color;
+}
+
+.apply-btn{
+    border-radius: 30px;
+    width: 130px;
+    height: 45px;
+    text-align: center;
+    color: $primary-color;
+}
+//innovation for education and society
+
+img{
+    width: 100%;
+}
+h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 15px;
+    
+}
+@mixin Btn($width,$height,$bg,$Text,$color,$Bradius,$fontSize) {
+    width:$width;
+    height: $height;
+    background: $bg;
+    color:$color;
+    border-radius:$Bradius;
+    font-size: $fontSize;
+    text-align: $Text;
+}
+
+.green-btn{
+    @include Btn(220px,60px,$primary-color,center,white,30px,17px); 
+   margin-top: 40px;
+}
+
+.innvo-row{
+    padding-top: 200px;
+
+}
+.banner-img{
+    position: absolute;
+    left: -28%;
+    top: 35%;
+    transform: translateY(-50%);
+}
+.bgSection{
+    position: relative;
+    overflow: hidden;
+}
+.innovation::before
+{
+     content: "";
+     background-image: url('../images/bg_shape.svg');
+    background-size: cover;
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    left: 60%;
+    z-index: -1;
+}
+
+//services
+
+
+
+.services .col-lg-4 .services-item{
+    width: 350px;
+    padding: 53px;
+    text-align: center;
+    margin-bottom: 40px;
+    height: 280px;
+    img{
+        width: 100%;
+        max-width: 75px;
+    }
+    h2{
+        font-weight: 700;
+        text-transform: capitalize;
+        padding-top: 40px;
+        align-items: center;
+    }
+}
+.services-item.engineer{
+    background: #f1e3fc;
+}
+.accounting{
+    background: #e3fcf9;
+}
+.creative{
+    background: #fcf0e4;
+}
+.design{
+    background: #fceee3;
+}
+.physics{
+    background: #f4fce4;
+}
+.chemistry{
+    background: #e2f3fb;
+}
+
+//limitations learning
+.limitation{
+    margin-top: 50px;
+}
+.video-img{
+    border: solid #ecf7fd;
+    border-width: 15px;
+    border-radius: 50%;
+    padding: 18px;
+    width: 518px;
+}
+
+
+.counter 
+{
+    margin-top: 70px;
+    h2{
+        padding: 0;
+        margin: 0;
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
+.student-counter  
+{
+  color:#f5ba32;
+}
+.courses-counter  
+{
+  color:#ea5c70;
+}
+.video-counter 
+{
+  color:$primary-color;
+}
+
+}
+
+//contact form
+
+.contact{
+    background-color: #f1e3fc;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.form-content p{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    .try-now{
+        color:#ea5c70;
+    }
+    h1{
+        color: black;
+    }
+}
+.contact-form{
+    // position: absolute;
+    // right: 0;
+    // bottom: -27px;
+    padding: 40px;
+    font-size: 14px;  
+    a{
+        color: black;
+        text-decoration: underline;
+        }  
+
+    h3{
+        text-align: center;
+        width: 100%;
+        font-size: 24px;
+        letter-spacing: 10px;
+        margin-bottom: 40px;
+    }
+}
+.form-row input{
+    margin-bottom: 15px;
+    border: 0;
+border-bottom: 2px solid #ecf7fd;
+font-size: 14px;
+}
+.form-row input:focus{
+    outline: 0;
+    border: 0;
+    box-shadow:none;
+}
+.form-btn{
+    @include Btn(155px,45px,$primary-color,center,white,30px,17px); 
+    margin-right: 30px;
+}
+
+.callNummber{
+    // margin-top: 30px;
+    display: inline-block;
+   
+} 
+
+//our university
+.all-newsbtn{
+    justify-content: flex-end;
+    align-items: center;
+}

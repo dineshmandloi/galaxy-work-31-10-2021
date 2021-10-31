@@ -1,0 +1,49 @@
+//font family
+
+
+$text-color-01:#26284e;
+$text-color-02:#585a79;
+$text-color-03:#7c7c95;
+$text-color-04:#d5d5e6;
+$text-color-05:#2a1d76;
+$text-color-06:#311f7c;
+$text-color-07:#d9edfe;
+$text-color-08:#f5f5f9;
+$text-color-09:#64cda6;
+$text-color-10:#72ead0;
+$text-color-11:#d0fdf6;
+$text-color-12:#f8cc4e;
+$text-color-13:#fadc83;
+$text-color-14:#fdf1ce;
+$text-color-15:#cc2815;
+$text-color-16:#e9434d;
+$text-color-17:#ed7e84;
+$text-color-18:#f8dadc;
+$textWhite:#fff;
+
+
+
+//font family
+
+$Fontfamily-Bold:'Poppins-Bold';
+$Fontfamily-Medium:'Poppins-Medium';
+$Fontfamily-Regular:'Poppins-Regular';
+
+
+//mixins
+
+@mixin flexprop($JustifyContent ,$alignItem) {
+    display: flex;
+    justify-content: $JustifyContent;
+    align-items: $alignItem;
+}
+@mixin Boxmodal($width,$height,$textAlign,$BorderRadius,$Border,$FontSize,$LineHight){
+    width:$width;
+    height: $height;
+    text-align: $textAlign;
+    border-radius:$BorderRadius;
+    border:$Border;
+    font-size: $FontSize;
+    line-height: $LineHight;
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+    <style>
+
+        .box{
+            position: absolute;
+
+        }
+        .box select{
+            background: white;
+            padding: 10px;
+            width:250px;
+            height: 50px;
+            border: none;
+            font-size: 20px;
+            -webkit-appearance: button;
+            outline: none;
+            border: 1px solid black!important;
+            color: black;
+            border-radius: 20px;
+
+        }
+        .box:before{
+            position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 48px;
+    background: #d9edfe;
+    color: #000;
+    pointer-events: none;
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    z-index: 0;
+    border-radius: 0 20px 20px 0;
+    border: 0.2px solid;
+    border-left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text">
+    </div>
+    <div class="box">
+        <select name="select" id="selectBox">
+            <option value="">Select input</option>
+            <option value="">one</option>
+            <option value="">two</option>
+            <option value="">three</option>
+            <option value="">four</option>
+            <option value="">five</option>
+
+        </select>
+
+    </div>
+</body>
+</html> 

@@ -1,0 +1,712 @@
+@import './variable.scss';
+@import './reset.scss';
+
+@font-face {
+  font-family:'Poppins-Bold';
+  src: url(../poppins/Poppins-Bold.otf);
+}
+@font-face {
+  font-family:'Poppins-Medium';
+  src: url(../poppins/Poppins-Medium.otf);
+}
+@font-face {
+  font-family:'Poppins-Regular';
+  src: url(../poppins/Poppins-Regular.otf);
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.flexitem{
+@include flexprop(space-between,normal);
+padding-bottom: 50px;
+
+.items{
+    width: 390px;
+}
+ h1
+{
+    text-transform: uppercase;
+    color: $text-color-06;
+    letter-spacing: 5px;
+    font-family:$Fontfamily-Bold;
+
+}
+}
+.app_name{
+  @include flexprop(space-between,baseline);
+    width: 331px;
+    font-family:$Fontfamily-Bold;
+
+h2{
+    font-size: 35px;
+    font-family:$Fontfamily-Bold;
+
+}
+}
+.app_name h4{
+    font-size: 25px;
+}
+.card01{
+  @include Boxmodal(100%,100px,$textAlign,12px,$Border,$FontSize,$LineHight);
+    background-color: $textWhite;
+    max-width: 350px;
+}
+.card02{
+  @include Boxmodal(100%,450px,$textAlign,12px,$Border,$FontSize,$LineHight);
+    background-color: $textWhite;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.buttons .btn
+{
+  @include Boxmodal(195px,50px,center,50px,none,18px,$LineHight);
+    background: $text-color-06;
+    color: $textWhite;
+    // font-size: 18px;
+    // border: none;
+    // border-radius: 50px;
+    // width: 195px;
+    // text-align: center;
+    // height: 50px; 
+}
+.AllClass {
+  padding-top: 150px;
+}
+.buttons {
+    width: 850px;
+  h1{
+    padding-bottom: 30px;
+  }
+    .btn-group{
+      @include flexprop(space-between,center);
+        margin-bottom: 30px;
+    }
+    .get-btn{
+        border-radius: 0px 0px 16px 16px;
+    }
+
+ .default-btn{
+        height: 40px;
+        width: 160px;
+}
+.small-btn {
+    width: 85px;
+    height: 35px;
+    font-size: 16px;
+}
+}
+.btn-group.btn-group02 .btn
+{
+    background-color:$textWhite;
+    color: $text-color-06;
+}
+.btn-group.btn-group03 .btn
+{
+    background-color:$text-color-10;
+    color: $text-color-06;
+
+}
+
+.items.items02{
+    height: 180px;
+}
+.indicator02{
+  padding: 50px 0;
+}
+
+.indi-cont{
+  @include flexprop(space-between,normal);
+
+.indicators {
+
+  @include flexprop(space-between,normal);
+    width: 400px;
+    
+.indi
+{
+  @include Boxmodal(65px,65px,center,50%,$Border,$FontSize,60px);
+}
+}
+}
+ .Indi_01{
+    background: $text-color-13;
+    border: 8px solid $text-color-12;
+
+}
+.Indi_02{
+    background: $text-color-10;
+    border: 8px solid $text-color-09;
+
+}
+.Indi_03{
+    background: $text-color-17;
+    border: 8px solid $text-color-16;
+
+}
+.Indi_04{
+    background: #d9edfe;
+    border: 8px solid #848fee;
+
+}
+
+.state-btn{
+  @include Boxmodal(18px,100px,$textAlign,30 0,0,$FontSize,$LineHight);
+    margin-right: 20px;
+}
+.btnIndi01{
+    background: $text-color-10;
+
+}
+.btnIndi02{
+    background:$text-color-16;
+
+}
+.btnIndi03{
+    background: $text-color-12;
+
+}
+.btnIndi04{
+    background: #9797bf
+
+}
+.progressbar{
+    width: 375px;
+    height: 11px;
+    background-color: $text-color-09;
+    margin-bottom: 20px;
+}
+#myProgress {
+    width: 375px;
+    background-color: $text-color-07;
+    height: 11px;
+  }
+  
+  #myBar {
+    @include Boxmodal(20%,11px,center,$BorderRadius,$Border,$FontSize,30px);
+    background-color: $text-color-09;
+    color: white;
+  }
+
+.controls{
+    display: flex;
+    width: 330px;
+
+}
+
+  .bar-icon {
+  @include Boxmodal(50px,50px,center,50px,$Border,20px,2.5);
+  background: $textWhite;
+  margin-right: 20px;
+  }
+  .bar-wt-bg{
+      background:none;
+  }
+
+
+.notification {
+  
+
+    text-decoration: none;
+    padding: 11px 15px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    font-size:20px;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -8px;
+    right: 15px;
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: $text-color-15;
+    color: white;
+  }
+  .noti-icon{
+    text-align: right;
+    padding-bottom: 20px;
+    width: 50px;
+    height: 50px;
+    float: right;
+  }
+  .noti-icon i{
+    color: white;
+    font-size: 25px;
+  }
+
+  .form-components  h2{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-family:$Fontfamily-Bold;
+
+  }
+  .formComponent .msg {
+    // width: 285px;
+    height: 50px;
+    line-height: 3;
+    font-size: 16px;
+    padding: 2px 15px;
+}
+
+
+
+.items h1{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family:$Fontfamily-Bold;
+
+} 
+  
+
+
+  .formComponent {
+    @include flexprop(space-between,normal);
+    h2{
+      margin-bottom: 20px;
+    }
+}
+
+.radio-btn .radio{
+width: 30px;
+height: 30px;
+}
+.check{
+    width: 30px;
+height: 30px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 40px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $text-color-08;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 31px;
+    width: 31px;
+    left: 0px;
+    bottom: 0px;
+    background-color: $textWhite;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 1px solid;
+  }
+  
+  input:checked + .slider {
+    background-color: $text-color-09;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px $text-color-09;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  .checkbox{
+    font-family: $Fontfamily-Regular;
+
+  }
+  .checkbox .checkmark{
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  hr.solid01 {
+    border-top: 2px solid white;
+    width: 300px;
+    margin-bottom: 50px;
+  }
+  hr.solid02 {
+    border-top: 2px solid black;
+
+  }
+  .annotations{
+    display: flex;
+  }
+  .anno00{
+    width: 374px;
+    height: 145px;
+    font-size: 16px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    font-family: $Fontfamily-Medium;
+  }
+  .anno01
+  {
+    background: $text-color-05;
+    color:$textWhite;
+  }
+  .anno02
+  {
+    background: $text-color-16;
+    color:$textWhite;
+  }
+  .anno03
+  {
+    background: $text-color-12;
+    color: black;
+  }
+  // .title-card{
+  //   display: flex;
+  // }
+  // .title-card
+  // {
+  //   background: white;
+  //   border-radius: 16px;
+  //   border-left: 16px solid #f8cc4e;
+  // }
+  // .cTbtn{
+  //   background: red;
+  //   border-radius: 0px 16px 16px 0px;
+  //   text-align: center;
+  // }
+  input {
+    @include Boxmodal(280x,50px,$textAlign,16px,1px solid,18px,$LineHight);
+    padding: 0 16px;
+}
+
+.chip {
+  @include Boxmodal(86px,35px,center,25px,1px solid,14px,30px);
+      background-color: #fff;
+      margin-bottom: 20px;
+}
+.closeTag{
+  width: 100px;
+}
+.badge01
+{
+  @include Boxmodal(50px,18px,center,20px,$Border,$FontSize,1.2);
+    background: #cc2815;
+    background: $text-color-10;
+    margin-bottom: 30px;
+}
+.badge000{
+  display: inline-block;
+
+}
+.badge{
+  margin-top: 20px;
+}
+.fa-check-circle{
+  color: $text-color-10;
+  margin-left: 10px;
+  display: inline;
+}
+.badge0{
+background: none;
+}
+.badge00{
+  background: #c4c4c4;
+  }
+  .box{
+  position: relative;
+}
+
+  .box select{
+    @include Boxmodal(285px,50px,$textAlign,20px,none,20px,$LineHight);
+    background: white;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    color: black;
+
+}
+.box:before{
+  @include Boxmodal(50%,48px,center,20px 0,0.2px solid,20px,50px);
+position: absolute;
+top: 0;
+right: 0;
+background: $text-color-07;
+color: #000;
+pointer-events: none;
+content: '\f358';
+font-family: "Font Awesome 5 Free";
+z-index: 0;
+border-left: 0;
+}
+.input-group {
+  margin-bottom: 30px;
+}
+
+.checkinput {
+  position: relative;
+  padding-left: 35px; 
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  margin-right: 17px;
+}
+
+/* Hide the browser's default checkbox */
+.checkinput input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border:1px solid black;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  @include Boxmodal(30px,30px,$textAlign,5px,1px solid,$FontSize,$LineHight);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+   
+}
+
+
+
+/* When the checkbox is checked, add a blue background */
+.checkinput input:checked ~ .checkmark {
+  background-color: $text-color-09;
+  
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkinput input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkinput .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+.inputradio {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 17px;
+}
+
+/* Hide the browser's default radio button */
+.inputradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.inputradio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.radio-btn{
+  margin-bottom: 30px;
+}
+
+/* On mouse-over, add a grey background color */
+.inputradio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.inputradio input:checked ~ .checkmark {
+  background-color: $text-color-09;
+  
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.inputradio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.inputradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.inputradio .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+
+.double-round-left{
+  @include Boxmodal(20px,20px,$textAlign,20px,1px solid,$FontSize,$LineHight);
+    position: absolute;
+    left: 6px;
+    top: 5px;
+}
+.double-round-right{
+  @include Boxmodal(20px,20px,$textAlign,20px,1px solid,$FontSize,$LineHight);
+    position: absolute;
+    // left: 7px;
+    top: 5px;
+    right: 4px;
+}
+.toggle-btn{
+margin-bottom: 30px;
+}
+.rctangle-input input{
+  border-radius: 0%;
+}
+
+
+.search-box:before {
+  @include Boxmodal(50px,48px,center,0 20px,1px solid,20px,50px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #000;
+  pointer-events: none;
+  content: '\f2ed';
+  font-family: "Font Awesome 5 Free";
+  z-index: 0;
+  border-left: 0;
+}
+.search-box{
+  position: relative;
+}
+#searchbox #s-box  {
+  width: 330px;
+  margin-bottom: 30px;
+
+}
+.input-group{
+  max-width: 285px;
+}
+
+//container02
+.annotations-class{
+  @include flexprop(space-between,normal);
+  width: 990px;
+}
+.delete-btn{
+  align-self: flex-end  
+}
+.boxdelete{
+  width: 390px;
+    border-left: 15px solid $text-color-12;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100px;
+    // text-align: center;
+    border-radius: 16px 0px 0px 16px;
+}
+
+.deleteBox{
+  width: 300px;
+  background: white;
+  padding-top: 28px;
+  padding: 28px 20px;
+  h4{
+    font-size: 16px;
+    font-family:$Fontfamily-Medium;
+    color: $text-color-05;
+  }
+  p{
+    font-family:$Fontfamily-Regular;
+  }
+
+}
+.deleteBtn
+{
+  text-align: center;
+    width: 90px;
+    background: $text-color-15;
+    border-radius: 0px 16px 16px 0px;
+    color: white;
+    padding-top: 25px;
+    line-height: 1.6;
+    font-family: $Fontfamily-Regular;
+}
+
+.tags div{
+  font-family: $Fontfamily-Bold;
+  font-size: 12px;
+}
+.tooltip div{
+  font-family: $Fontfamily-Regular;
+  font-size: 14px;
+}
+// button.large-btn.btn.change-color-01
+.change-color-01 {
+  background: $text-color-10!important;
+}
+
+.change-color-02 {
+  background: white!important;
+}

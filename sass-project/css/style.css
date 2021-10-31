@@ -1,0 +1,847 @@
+* {
+  margin: 0px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #d0fdf6;
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url(../poppins/Poppins-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url(../poppins/Poppins-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url(../poppins/Poppins-Regular.otf);
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flexitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  padding-bottom: 50px;
+}
+
+.flexitem .items {
+  width: 390px;
+}
+
+.flexitem h1 {
+  text-transform: uppercase;
+  color: #311f7c;
+  letter-spacing: 5px;
+  font-family: "Poppins-Bold";
+}
+
+.app_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 331px;
+  font-family: "Poppins-Bold";
+}
+
+.app_name h2 {
+  font-size: 35px;
+  font-family: "Poppins-Bold";
+}
+
+.app_name h4 {
+  font-size: 25px;
+}
+
+.card01 {
+  width: 100%;
+  height: 100px;
+  text-align: initial;
+  border-radius: 12px;
+  border: none;
+  font-size: unset;
+  line-height: normal;
+  background-color: #fff;
+  max-width: 350px;
+}
+
+.card02 {
+  width: 100%;
+  height: 450px;
+  background-color: #fff;
+  max-width: 350px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.buttons .btn {
+  background: #311f7c;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  width: 195px;
+  text-align: center;
+  height: 50px;
+}
+
+.AllClass {
+  padding-top: 150px;
+}
+
+.buttons {
+  width: 850px;
+}
+
+.buttons h1 {
+  padding-bottom: 30px;
+}
+
+.buttons .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.buttons .get-btn {
+  border-radius: 0px 0px 16px 16px;
+}
+
+.buttons .default-btn {
+  height: 40px;
+  width: 160px;
+}
+
+.buttons .small-btn {
+  width: 85px;
+  height: 35px;
+  font-size: 16px;
+}
+
+.btn-group.btn-group02 .btn {
+  background-color: #fff;
+  color: #311f7c;
+}
+
+.btn-group.btn-group03 .btn {
+  background-color: #72ead0;
+  color: #311f7c;
+}
+
+.items.items02 {
+  height: 180px;
+}
+
+.indicator02 {
+  padding: 50px 0;
+}
+
+.indi-cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+
+.indi-cont .indicators {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  width: 400px;
+}
+
+.indi-cont .indicators .indi {
+  text-align: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  line-height: 60px;
+}
+
+.Indi_01 {
+  background: #fadc83;
+  border: 8px solid #f8cc4e;
+}
+
+.Indi_02 {
+  background: #72ead0;
+  border: 8px solid #64cda6;
+}
+
+.Indi_03 {
+  background: #ed7e84;
+  border: 8px solid #e9434d;
+}
+
+.Indi_04 {
+  background: #d9edfe;
+  border: 8px solid #848fee;
+}
+
+.state-btn {
+  height: 100px;
+  width: 18px;
+  border: 0;
+  border-radius: 30px 0px 0px 30px;
+  margin-right: 20px;
+}
+
+.btnIndi01 {
+  background: #72ead0;
+}
+
+.btnIndi02 {
+  background: #e9434d;
+}
+
+.btnIndi03 {
+  background: #f8cc4e;
+}
+
+.btnIndi04 {
+  background: #9797bf;
+}
+
+.progressbar {
+  width: 375px;
+  height: 11px;
+  background-color: #64cda6;
+  margin-bottom: 20px;
+}
+
+#myProgress {
+  width: 375px;
+  background-color: #d9edfe;
+  height: 11px;
+}
+
+#myBar {
+  width: 20%;
+  height: 11px;
+  background-color: #64cda6;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+}
+
+.bar-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background: #fff;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.bar-wt-bg {
+  background: none;
+}
+
+.notification {
+  text-decoration: none;
+  padding: 11px 15px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 20px;
+}
+
+.notification .badge {
+  position: absolute;
+  top: -8px;
+  right: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #cc2815;
+  color: white;
+}
+
+.noti-icon {
+  text-align: right;
+  padding-bottom: 20px;
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+.noti-icon i {
+  color: white;
+  font-size: 25px;
+}
+
+.form-components h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "Poppins-Bold";
+}
+
+.formComponent .msg {
+  height: 50px;
+  line-height: 3;
+  font-size: 16px;
+  padding: 2px 15px;
+}
+
+.items h1 {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-family: "Poppins-Bold";
+}
+
+.formComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+}
+
+.formComponent h2 {
+  margin-bottom: 20px;
+}
+
+.radio-btn .radio {
+  width: 30px;
+  height: 30px;
+}
+
+.check {
+  width: 30px;
+  height: 30px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 40px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f5f5f9;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 31px;
+  width: 31px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: 1px solid;
+}
+
+input:checked + .slider {
+  background-color: #64cda6;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #64cda6;
+          box-shadow: 0 0 1px #64cda6;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.checkbox {
+  font-family: "Poppins-Regular";
+}
+
+.checkbox .checkmark {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+hr.solid01 {
+  border-top: 2px solid white;
+  width: 300px;
+  margin-bottom: 50px;
+}
+
+hr.solid02 {
+  border-top: 2px solid black;
+}
+
+.annotations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.anno00 {
+  width: 374px;
+  height: 145px;
+  font-size: 16px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  font-family: "Poppins-Medium";
+}
+
+.anno01 {
+  background: #2a1d76;
+  color: #fff;
+}
+
+.anno02 {
+  color: #fff;
+  background-color: #e9434d;
+}
+
+.anno03 {
+  background: #f8cc4e;
+  color: black;
+}
+
+input {
+  width: 280px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid;
+  font-size: 18px;
+  padding: 0 16px;
+}
+
+.chip {
+  /* display: block; */
+  width: 86px;
+  /* padding: 0 25px; */
+  height: 35px;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+.closeTag {
+  width: 100px;
+}
+
+.badge01 {
+  width: 50px;
+  background: #cc2815;
+  text-align: center;
+  border-radius: 20px;
+  height: 18px;
+  line-height: 1.2;
+  background: #72ead0;
+  margin-bottom: 30px;
+}
+
+.badge000 {
+  display: inline-block;
+}
+
+.badge {
+  margin-top: 20px;
+}
+
+.fa-check-circle {
+  color: #72ead0;
+  margin-left: 10px;
+  display: inline;
+}
+
+.badge0 {
+  background: none;
+}
+
+.badge00 {
+  background: #c4c4c4;
+}
+
+.box {
+  position: relative;
+}
+
+.box select {
+  background: white;
+  padding: 10px;
+  width: 285px;
+  height: 50px;
+  border: none;
+  font-size: 20px;
+  -webkit-appearance: button;
+  outline: none;
+  border: 1px solid black !important;
+  color: black;
+  border-radius: 20px;
+}
+
+.box:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 48px;
+  background: #d9edfe;
+  color: #000;
+  pointer-events: none;
+  content: '\f358';
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  z-index: 0;
+  border-radius: 0 20px 20px 0;
+  border: 0.2px solid;
+  border-left: 0;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.checkinput {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 17px;
+}
+
+/* Hide the browser's default checkbox */
+.checkinput input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border: 1px solid black;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkinput input:checked ~ .checkmark {
+  background-color: #64cda6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkinput input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkinput .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.inputradio {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 17px;
+}
+
+/* Hide the browser's default radio button */
+.inputradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.inputradio .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.radio-btn {
+  margin-bottom: 30px;
+}
+
+/* On mouse-over, add a grey background color */
+.inputradio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.inputradio input:checked ~ .checkmark {
+  background-color: #64cda6;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.inputradio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.inputradio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.inputradio .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.double-round-left {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  left: 6px;
+  top: 5px;
+}
+
+.double-round-right {
+  border: 1px solid;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  position: absolute;
+  top: 5px;
+  right: 4px;
+}
+
+.toggle-btn {
+  margin-bottom: 30px;
+}
+
+.rctangle-input input {
+  border-radius: 0%;
+}
+
+.search-box:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 48px;
+  color: #000;
+  pointer-events: none;
+  content: '\f2ed';
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Font Awesome 5 Free";
+  z-index: 0;
+  border-radius: 0 20px 20px 0;
+  border-left: 0;
+}
+
+.search-box {
+  position: relative;
+}
+
+#searchbox #s-box {
+  width: 330px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  max-width: 285px;
+}
+
+.annotations-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: normal;
+      -ms-flex-align: normal;
+          align-items: normal;
+  width: 990px;
+}
+
+.delete-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.boxdelete {
+  width: 390px;
+  border-left: 15px solid #f8cc4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.deleteBox {
+  width: 300px;
+  background: white;
+  padding-top: 28px;
+  padding: 28px 20px;
+}
+
+.deleteBox h4 {
+  font-size: 16px;
+  font-family: "Poppins-Medium";
+  color: #2a1d76;
+}
+
+.deleteBox p {
+  font-family: "Poppins-Regular";
+}
+
+.deleteBtn {
+  text-align: center;
+  width: 90px;
+  background: #cc2815;
+  border-radius: 0px 16px 16px 0px;
+  color: white;
+  padding-top: 25px;
+  line-height: 1.6;
+  font-family: "Poppins-Regular";
+}
+
+.tags div {
+  font-family: "Poppins-Bold";
+  font-size: 12px;
+}
+
+.tooltip div {
+  font-family: "Poppins-Regular";
+  font-size: 14px;
+}
+
+.change-color-01 {
+  background: #72ead0 !important;
+}
+
+.change-color-02 {
+  background: white !important;
+}
+/*# sourceMappingURL=style.css.map */
