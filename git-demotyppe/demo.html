@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+
+</style>
+</head>
+<body>
+
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+<button class="btn" onclick="myFunction()"><i class="fas fa-bars"></i></button>
+
+<div id="menu">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">departments</a></li>
+        <li><a href="#">doctors</a></li>
+        <li class="dropdown"><a href="#">dropdown <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropitem">
+          <li><a href="#">dropdown</a></li>
+          <li class="dropdown dropdown_second"><a href="#">dropdown down <i class="fas fa-chevron-right"></i></a>
+            <ul class="dropitem dropitem_second" id="drop">
+              <li><a href="#">dropdown</a></li>
+              <li><a href="#">dropdown</a></li>
+              <li><a href="#">dropdown</a></li>
+              <li><a href="#">dropdown</a></li>
+              <li><a href="#">dropdown</a></li>
+            </ul>
+          </li>
+          <li><a href="#">dropdown</a></li>
+          <li><a href="#">dropdown</a></li>
+          <li><a href="#">dropdown</a></li>
+        </ul>
+        </li>
+        <li><a href="#">contact</a></li>
+        <li></li>
+      </ul>
+    </div>
+
+<p><b>Note:</b> The element will not take up any space when the display property set to "none".</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("menu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+

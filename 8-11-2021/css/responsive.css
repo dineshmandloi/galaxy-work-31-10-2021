@@ -1,0 +1,236 @@
+@media only screen and (max-width:767px) {
+    /* top nav */
+    .topNav {
+        display: none;
+    }
+    .alert {
+        display: block;
+    }
+    /* navabr */
+    #navbar .icon {
+        display: block;
+    }
+    .navbar {
+        display: block;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .navbar a {
+        display: none;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .logo {
+        display: none;
+    }
+    .mobile_Logo {
+        font-family: 'poppins';
+        font-size: 25px;
+        font-weight: 800;
+        width: 179px;
+        height: 28px;
+        margin-left: 35px;
+        line-height: 24px;
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .mobile_menu {
+        display: block;
+    }
+    .heroImage {
+        height: 200px;
+    }
+    .btn-group a {
+        line-height: 24px;
+        font-size: 17px;
+        padding: 15px 0px;
+        margin-bottom: 8px;
+    }
+    .smaller-btn {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0px 25px 25px;
+    }
+    .flex-columns .row {
+        flex-direction: column;
+        bottom: 30px;
+    }
+    .heroHeading h1 {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .flex-columns .column-2 {
+        padding-left: 0;
+    }
+    .insertimg {
+        margin-right: 0;
+    }
+    .section01 {
+        margin-top: 18px;
+        padding-bottom: 0;
+    }
+    .imgText h1 {
+        font-size: 21px;
+        line-height: 28px;
+        margin-top: 48px;
+    }
+    .helpText h1 {
+        font-size: 21px;
+        line-height: 28px;
+    }
+    .flexitems-foot>div {
+        width: 300px;
+    }
+    .flexitems-foot {
+        justify-content: flex-start;
+    }
+    .copyRight {
+        flex-direction: column;
+    }
+    .copyRight div {
+        margin-bottom: 13px;
+    }
+    .helpSection {
+        padding: 48px 30px;
+    }
+    /* .homeIcon
+    {
+        display: inline;
+    float: left;
+    line-height: 46px;
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-right: 12px;
+    } */
+    .hero-row {
+        padding: 47px 25px 34px;
+        height: auto;
+    }
+
+    .footerLogo {
+        display: flex;
+        align-items: center;
+    }
+    .footerImg img {
+        max-width: 70px;
+    }
+    .flexitems-foot h2 {
+        margin-top: 0;
+        padding-left: 20px;
+        text-align: left;
+    }
+    .section01 {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:1118px) {
+    /* topNav */
+    .flexitem ul li {
+        padding-left: 30px;
+    }
+    .flexitem ul li a {
+        font-size: 15px;
+    }
+    /* navabr */
+    .menu ul li {
+        padding-left: 25px;
+    }
+    .login_btn {
+        width: 120px;
+        height: 46px;
+        font-size: 17px;
+    }
+    /* footer */
+    .flexitems-foot h2 {
+        font-size: 21px;
+    }
+    .flexitems-foot h4 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    /* topnav */
+    .topNav {
+        padding: 0 24px;
+    }
+    .flexitem ul li {
+        padding-left: 15px;
+    }
+    .flexitem ul li a {
+        font-size: 12px;
+    }
+    .topText p {
+        font-size: 12px;
+    }
+    /* navbar */
+    .logo {
+        max-width: 200px;
+    }
+    .menu ul li {
+        padding-left: 18px;
+    }
+    .menu ul li a {
+        font-size: 15px;
+    }
+    .login_btn {
+        font-size: 17px;
+    }
+    /* herotext */
+    .heroHeading h1 {
+        font-size: 27px;
+    }
+    /* footer */
+    .flexitems-foot {
+        flex-wrap: wrap;
+    }
+    .footer {
+        padding: 24px 24px 0 24px;
+    }
+    .flexitems-foot>div {
+        width: 350px;
+    }
+    .flexitems-foot h4 {
+        max-width: 300px;
+    }
+    /* copyRight */
+    .copyRight {
+        padding: 20px 24px;
+    }
+    .copyPara p {
+        font-size: 15px;
+    }
+    .copyPara  i {
+        font-size: 20px;
+    }
+   
+    .copyText p {
+        font-size: 13px;
+        text-align: left;
+    }
+}
+
+
+@media only screen and (max-width:459px){
+    .b-group{
+        margin-bottom: 40px;
+    }
+}
