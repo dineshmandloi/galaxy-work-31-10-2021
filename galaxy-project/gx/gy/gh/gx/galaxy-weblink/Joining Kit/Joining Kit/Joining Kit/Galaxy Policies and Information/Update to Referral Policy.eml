@@ -1,0 +1,332 @@
+Return-Path: <hr.galaxyweblinks@gmail.com>
+Received: from mx1.galaxyweblinks.in (LHLO mx1.galaxyweblinks.in)
+ (10.10.2.12) by mx1.galaxyweblinks.in with LMTP; Fri, 9 Apr 2021 15:59:02
+ +0530 (IST)
+Received: from localhost (localhost [127.0.0.1])
+	by mx1.galaxyweblinks.in (Postfix) with ESMTP id BCD0014C048E;
+	Fri,  9 Apr 2021 15:59:01 +0530 (IST)
+X-Virus-Scanned: amavisd-new at galaxyweblinks.in
+X-Spam-Flag: NO
+X-Spam-Score: -1.389
+X-Spam-Level:
+X-Spam-Status: No, score=-1.389 required=6.6 tests=[BAYES_00=-1.9,
+	DKIM_SIGNED=0.1, DKIM_VALID=-0.1, FREEMAIL_FORGED_FROMDOMAIN=0.25,
+	FREEMAIL_FROM=0.001, HEADER_FROM_DIFFERENT_DOMAINS=0.25,
+	HTML_MESSAGE=0.001, RCVD_IN_DNSWL_NONE=-0.0001,
+	RCVD_IN_MSPIKE_H2=-0.001, SPF_HELO_NONE=0.001, SPF_PASS=-0.001,
+	T_KAM_HTML_FONT_INVALID=0.01] autolearn=no autolearn_force=no
+Authentication-Results: mx1.galaxyweblinks.in (amavisd-new);
+	dkim=pass (2048-bit key)
+	header.d=galaxyweblinks-com.20150623.gappssmtp.com
+Received: from mx1.galaxyweblinks.in ([127.0.0.1])
+	by localhost (mx1.galaxyweblinks.in [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 5JvU0aDV5x2x; Fri,  9 Apr 2021 15:58:59 +0530 (IST)
+Received: from mail-ed1-f45.google.com (mail-ed1-f45.google.com [209.85.208.45])
+	by mx1.galaxyweblinks.in (Postfix) with ESMTPS id 7979914C003B
+	for <employee@galaxyweblinks.in>; Fri,  9 Apr 2021 15:58:58 +0530 (IST)
+Received: by mail-ed1-f45.google.com with SMTP id r22so5918185edq.9
+        for <employee@galaxyweblinks.in>; Fri, 09 Apr 2021 03:28:58 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=galaxyweblinks-com.20150623.gappssmtp.com; s=20150623;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=wPxPG6IEDpdNCGhRgZgN+lLI06zmT6+TjBSiJK81AZM=;
+        b=oKMeWDr2X3XQimLqLdWbXUbAl4QwcQ2FxeKromu5eiv6shvGbWxLCpsZGxK1hKoX8V
+         15M57LvHsQR1l5q2LUivKAc7iSxr+Yq4eVAavk9SjB9dWR60PUo1fNu62RppKZlaql1l
+         vrMZsDYNMH0xuasEQu7DZTqV0/ZtPeYtIooo/W4qlEbZKjsLZ9+jVbFBRzbLSwzlLdHz
+         7575wk7l8HRJr79NRPGaI8UUWk3Mhsv4xaUCFGvTUaEVbQyrToV1z+OIzpUBParpLHC1
+         wQe40V3xI8eNUbVcqrdJW7LF+FpyCZidjc/msKVe5COGOB73mtAwuOoRFZluK3hD1ids
+         oBYQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=wPxPG6IEDpdNCGhRgZgN+lLI06zmT6+TjBSiJK81AZM=;
+        b=XP9Dmb2b6F6GGF6XEQCRvXCoTV03N4wZgWLBEN0qnu0ujm2r26Q5Yj+MgAhmls4pps
+         AEdL6b1yZiuIVYgK0AMohzOPs1LKNJxrqA3wR9ONFNXa/6DXuULuYbuZfB6Q41Qfe7+u
+         H6/9C2HhsYjbUfjoqR3ZTtp4y8HQ6PIoXE61kTWXFeQTpJzcZqArn6qN0Wh1UbXNOjB+
+         OUWIcIhamh+NSZvb10cI4h3RubgMgPtgeXbGRlL8ARjYbXXQBXoh/mH6VusWb+M/Honk
+         I+ZKCm04xjqaNVV56YYg1h5HOz51MdJmVPoqe51zIg8oCBma9eJhEgMUPetKTkHC4FkW
+         rHhw==
+X-Gm-Message-State: AOAM530R9VLHSdhKmaSAtfHPD5gP/nDZnNqoVqsA7P0Rv6bdohs6GHXH
+	1+y2DCcnKRxUGrYjBWJFfU7TT535ZQff4BXeg2E=
+X-Google-Smtp-Source: ABdhPJxpPcPfIhH/4dr78bxsaD70PUndtmYuWEA9J3XPoeXI0CoxJvmSsWLh63819hT6e1iuYSD03RdtKHE2KySJ5yQ=
+X-Received: by 2002:a05:6402:110b:: with SMTP id u11mr17447783edv.356.1617964136182;
+ Fri, 09 Apr 2021 03:28:56 -0700 (PDT)
+MIME-Version: 1.0
+From: Galaxy Weblinks HR <hr@galaxyweblinks.com>
+Date: Fri, 9 Apr 2021 15:58:17 +0530
+Message-ID: <CADha0URKdxgfzYOXJTiNW+OuhjTqm15QL7JTsNGtoWcmKLer1g@mail.gmail.com>
+Subject: Update to Referral Policy
+To: hr@galaxyweblinks.com
+Content-Type: multipart/alternative; boundary="00000000000098b55405bf87a104"
+X-Antivirus: Avast (VPS 210408-4, 08-04-2021), Inbound message
+X-Antivirus-Status: Clean
+
+--00000000000098b55405bf87a104
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Galaxy Family,
+
+Our company will give out rewards to every referrer. If you know someone
+who you think would be a good fit for a position at our company, feel free
+to refer them to our Recruitment team. If we end up hiring your referred
+candidate, you are eligible for referral bonus as per the candidates
+designation listed here:
+
+Project Manager Rs 50,000 /-
+Senior Team Lead Rs 40,000 /-
+Team Lead Rs 30,000 /-
+Module Lead Rs 25,000 /-
+Senior Software Engineer Rs 20,000 /-
+Software Engineer Rs 12,000 /-
+
+Terms and Conditions:
+
+   - The rewards will be paid 50% after confirmation of the candidate (post
+   probation) and 50% after he/she completes 6 months of joining.
+   - Sr. PM and above, HR+ recruitment team are not eligible for referral
+   bonus.
+   - Employees who are on the hiring committee or interviewer for a
+   specific position can not interview the referral candidate themselves. F=
+or
+   eg. If an ML refers a candidate for an SSE position for his
+   team/department, s/he can not interview them for the job.
+   - There is no cap on the number of referrals an employee can make. All
+   rewards will be paid accordingly.
+   - If two or more employees refer the same candidate, only the first
+   referrer will receive their referral rewards.
+   - Any referred candidate should not be in our database or have applied
+   at a previous date in the last 6 months for the same position. However,
+   if the position is different and the candidate is selected, the referral
+   bonus will stand. This will be at the sole discretion of the Recruitment
+   team.
+   - All past employees who might rejoin are not eligible to be referred
+   under this policy.
+   - If the candidate turns down the offer or does not get confirmation
+   then the company is not liable to make referral payments. If the
+   probationary period is extended then the payments will be subsequently
+   delayed.
+   - The referral bonus is for full time candidates in technical profiles
+   and does not stand for trainees, freshers, part-time, admin/accounts tea=
+m
+   and consultant positions. Software engineers referred to should have at
+   least more than 1.5 years experience.
+   - Keep in mind that rewards may be subject to taxation. Please contact
+   HR or the account's team for more information.
+
+We=E2=80=99d like to remind our employees that we are an equal opportunity =
+employer
+and do not discriminate on the basis of gender, caste or creed. Our
+referred candidates may take precedence in the hiring process. We guarantee
+that all candidates will be given the same consideration and will pass
+through the established procedures of merit based assessment.
+
+Email your referral to the recruitment team @ referral@galaxyweblinks.in
+with name of candidate and designation as subject.
+
+
+
+We look forward to your referral !
+
+
+
+
+
+--=20
+Regards
+Sonika Shrivatri
+Sr. Manager - HR
+Galaxy Weblinks Limited
+www.galaxyweblinks.com
+
+--00000000000098b55405bf87a104
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><span style=3D"font-size:12pt;font-family:Calibr=
+i,sans-serif;color:rgb(0,0,0);background-color:transparent;font-variant-num=
+eric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-sp=
+ace:pre-wrap"><br></span></div><div><span style=3D"background-color:transpa=
+rent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-al=
+ign:baseline;white-space:pre-wrap"><font face=3D"verdana, sans-serif" style=
+=3D"" color=3D"#000000">Hello Galaxy Family,</font></span></div><div><span =
+style=3D"background-color:transparent;font-variant-numeric:normal;font-vari=
+ant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><font f=
+ace=3D"verdana, sans-serif" color=3D"#000000"><br></font></span></div><div>=
+<span style=3D"color:rgb(0,0,0);font-family:verdana,sans-serif;background-c=
+olor:transparent;white-space:pre-wrap">Our company will give out rewards to=
+ every referrer. If you know someone who you think would be a good fit for =
+a position at our company, feel free to refer them to our Recruitment team.=
+ If we end up hiring your referred candidate, you are eligible for referral=
+ bonus as per the candidates designation listed here:</span><br></div><div>=
+<div><p></p><table dir=3D"ltr" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"1" style=3D"table-layout:fixed;width:0px;border-collapse:collapse;borde=
+r:none"><colgroup><col width=3D"215"><col width=3D"229"></colgroup><tbody><=
+tr style=3D"height:21px"><td style=3D"border-width:1px;border-style:solid;b=
+order-color:rgb(0,0,0);overflow:hidden;padding:2px 3px;vertical-align:botto=
+m"><font face=3D"verdana, sans-serif" color=3D"#000000">Project Manager</fo=
+nt></td><td style=3D"border-top:1px solid rgb(0,0,0);border-right:1px solid=
+ rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);overflow:hidden;padding:2px =
+3px;vertical-align:bottom"><font face=3D"verdana, sans-serif" color=3D"#000=
+000">Rs 50,000 /-</font></td></tr><tr style=3D"height:21px"><td style=3D"bo=
+rder-right:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);border-l=
+eft:1px solid rgb(0,0,0);overflow:hidden;padding:2px 3px;vertical-align:bot=
+tom"><font face=3D"verdana, sans-serif" color=3D"#000000">Senior Team Lead<=
+/font></td><td style=3D"border-right:1px solid rgb(0,0,0);border-bottom:1px=
+ solid rgb(0,0,0);overflow:hidden;padding:2px 3px;vertical-align:bottom"><f=
+ont face=3D"verdana, sans-serif" color=3D"#000000">Rs 40,000 /-</font></td>=
+</tr><tr style=3D"height:21px"><td style=3D"border-right:1px solid rgb(0,0,=
+0);border-bottom:1px solid rgb(0,0,0);border-left:1px solid rgb(0,0,0);over=
+flow:hidden;padding:2px 3px;vertical-align:bottom"><font face=3D"verdana, s=
+ans-serif" color=3D"#000000">Team Lead</font></td><td style=3D"border-right=
+:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);overflow:hidden;pa=
+dding:2px 3px;vertical-align:bottom"><font face=3D"verdana, sans-serif" col=
+or=3D"#000000">Rs 30,000 /-</font></td></tr><tr style=3D"height:21px"><td s=
+tyle=3D"border-right:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0=
+);border-left:1px solid rgb(0,0,0);overflow:hidden;padding:2px 3px;vertical=
+-align:bottom"><font face=3D"verdana, sans-serif" color=3D"#000000">Module =
+Lead</font></td><td style=3D"border-right:1px solid rgb(0,0,0);border-botto=
+m:1px solid rgb(0,0,0);overflow:hidden;padding:2px 3px;vertical-align:botto=
+m"><font face=3D"verdana, sans-serif" color=3D"#000000">Rs 25,000 /-</font>=
+</td></tr><tr style=3D"height:21px"><td style=3D"border-right:1px solid rgb=
+(0,0,0);border-bottom:1px solid rgb(0,0,0);border-left:1px solid rgb(0,0,0)=
+;overflow:hidden;padding:2px 3px;vertical-align:bottom"><font face=3D"verda=
+na, sans-serif" color=3D"#000000">Senior Software Engineer</font></td><td s=
+tyle=3D"border-right:1px solid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0=
+);overflow:hidden;padding:2px 3px;vertical-align:bottom"><font face=3D"verd=
+ana, sans-serif" color=3D"#000000">Rs 20,000 /-</font></td></tr><tr style=
+=3D"height:21px"><td style=3D"border-right:1px solid rgb(0,0,0);border-bott=
+om:1px solid rgb(0,0,0);border-left:1px solid rgb(0,0,0);overflow:hidden;pa=
+dding:2px 3px;vertical-align:bottom"><font face=3D"verdana, sans-serif" col=
+or=3D"#000000">Software Engineer</font></td><td style=3D"border-right:1px s=
+olid rgb(0,0,0);border-bottom:1px solid rgb(0,0,0);overflow:hidden;padding:=
+2px 3px;vertical-align:bottom"><font face=3D"verdana, sans-serif" color=3D"=
+#000000">Rs 12,000 /-</font></td></tr></tbody></table><p dir=3D"ltr" style=
+=3D"line-height:1.38;margin:0px"><span style=3D"background-color:transparen=
+t;font-weight:bold;font-variant-numeric:normal;font-variant-east-asian:norm=
+al;vertical-align:baseline;white-space:pre-wrap"><font face=3D"verdana, san=
+s-serif" color=3D"#000000">
+Terms and Conditions:</font></span></p><ul><li style=3D"margin-left:15px"><=
+font face=3D"verdana, sans-serif" color=3D"#000000"><span style=3D"backgrou=
+nd-color:transparent;font-variant-numeric:normal;font-variant-east-asian:no=
+rmal;vertical-align:baseline;white-space:pre-wrap">The rewards will be paid=
+ 50% after confirmation of the candidate (post probation) and 50% after he/=
+she completes 6 months of joining.</span><span style=3D"background-color:tr=
+ansparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertic=
+al-align:baseline;white-space:pre-wrap"></span></font></li><li style=3D"mar=
+gin-left:15px"><font face=3D"verdana, sans-serif" color=3D"#000000"><span s=
+tyle=3D"background-color:transparent;font-variant-numeric:normal;font-varia=
+nt-east-asian:normal;vertical-align:baseline;white-space:pre-wrap">Sr. PM a=
+nd above, HR+ recruitment team are not eligible for referral bonus.</span><=
+span style=3D"background-color:transparent;font-variant-numeric:normal;font=
+-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"></=
+span><span style=3D"background-color:transparent;font-variant-numeric:norma=
+l;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wr=
+ap"></span></font></li><li style=3D"margin-left:15px"><font face=3D"verdana=
+, sans-serif" color=3D"#000000"><span style=3D"background-color:transparent=
+;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:=
+baseline;white-space:pre-wrap">Employees who are on the hiring committee or=
+ interviewer for a specific position can not interview the referral candida=
+te themselves. For eg. If an ML refers a candidate for an SSE position for =
+his team/department, s/he can not interview them for the job.</span><span s=
+tyle=3D"background-color:transparent;font-variant-numeric:normal;font-varia=
+nt-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"></span><=
+/font></li><li style=3D"margin-left:15px"><font face=3D"verdana, sans-serif=
+" color=3D"#000000"><span style=3D"background-color:transparent;font-varian=
+t-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;whi=
+te-space:pre-wrap">There is no cap on the number of referrals an employee c=
+an make. All rewards will be paid accordingly.</span><span style=3D"backgro=
+und-color:transparent;font-variant-numeric:normal;font-variant-east-asian:n=
+ormal;vertical-align:baseline;white-space:pre-wrap"></span><span style=3D"b=
+ackground-color:transparent;font-variant-numeric:normal;font-variant-east-a=
+sian:normal;vertical-align:baseline;white-space:pre-wrap"></span></font></l=
+i><li style=3D"margin-left:15px"><font face=3D"verdana, sans-serif" color=
+=3D"#000000"><span style=3D"background-color:transparent;font-variant-numer=
+ic:normal;font-variant-east-asian:normal;vertical-align:baseline;white-spac=
+e:pre-wrap">If two or more employees refer the same candidate, only the fir=
+st referrer will receive their referral rewards.</span><span style=3D"backg=
+round-color:transparent;font-variant-numeric:normal;font-variant-east-asian=
+:normal;vertical-align:baseline;white-space:pre-wrap"></span></font></li><l=
+i style=3D"margin-left:15px"><font face=3D"verdana, sans-serif" color=3D"#0=
+00000"><span style=3D"background-color:transparent;font-variant-numeric:nor=
+mal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-=
+wrap">Any referred candidate should not be in our database or have applied =
+at a previous date in the last 6 months for the same position.</span><span =
+style=3D"background-color:transparent;font-variant-numeric:normal;font-vari=
+ant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"></span>=
+<span style=3D"background-color:transparent;font-variant-numeric:normal;fon=
+t-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"> =
+However, if the position is different and the candidate is selected, the re=
+ferral bonus will stand. This will be at the sole discretion of the Recruit=
+ment team.</span><span style=3D"background-color:transparent;font-variant-n=
+umeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-=
+space:pre-wrap"></span></font></li><li style=3D"margin-left:15px"><font fac=
+e=3D"verdana, sans-serif" color=3D"#000000"><span style=3D"background-color=
+:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;ver=
+tical-align:baseline;white-space:pre-wrap">All past employees who might rej=
+oin are not eligible to be referred under this policy.</span><span style=3D=
+"background-color:transparent;font-variant-numeric:normal;font-variant-east=
+-asian:normal;vertical-align:baseline;white-space:pre-wrap"></span><span st=
+yle=3D"background-color:transparent;font-variant-numeric:normal;font-varian=
+t-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"></span></=
+font></li><li style=3D"margin-left:15px"><font face=3D"verdana, sans-serif"=
+ color=3D"#000000"><span style=3D"background-color:transparent;font-variant=
+-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;whit=
+e-space:pre-wrap">If the candidate turns down the offer or does not get con=
+firmation then the company is not liable to make referral payments. If the =
+probationary period is extended then the payments will be subsequently dela=
+yed.</span><span style=3D"background-color:transparent;font-variant-numeric=
+:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:=
+pre-wrap"></span></font></li><li style=3D"margin-left:15px"><font face=3D"v=
+erdana, sans-serif" color=3D"#000000"><span style=3D"background-color:trans=
+parent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-=
+align:baseline;white-space:pre-wrap">The referral bonus is for full time ca=
+ndidates in technical profiles and does not stand for trainees, freshers, p=
+art-time, admin/accounts team and consultant positions. Software engineers =
+referred to should have at least more than 1.5 years experience.</span><spa=
+n style=3D"background-color:transparent;font-variant-numeric:normal;font-va=
+riant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"></spa=
+n><span style=3D"background-color:transparent;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"=
+></span></font></li><li style=3D"margin-left:15px"><span style=3D"backgroun=
+d-color:transparent;font-variant-numeric:normal;font-variant-east-asian:nor=
+mal;vertical-align:baseline;white-space:pre-wrap"><font face=3D"verdana, sa=
+ns-serif" color=3D"#000000">Keep in mind that rewards may be subject to tax=
+ation. Please contact HR or the account&#39;s team for more information.=20
+</font></span></li></ul><p dir=3D"ltr" style=3D"line-height:1.38;margin:0px=
+"><span style=3D"background-color:transparent;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"=
+><font face=3D"verdana, sans-serif" color=3D"#000000">We=E2=80=99d like to =
+remind our employees that we are an equal opportunity employer and do not d=
+iscriminate on the basis of gender, caste or creed. Our referred candidates=
+ may take precedence in the hiring process. We guarantee that all candidate=
+s will be given the same consideration and will pass through the establishe=
+d procedures of merit based assessment.</font></span></p><font face=3D"verd=
+ana, sans-serif" color=3D"#000000"><br></font><p dir=3D"ltr" style=3D"line-=
+height:1.38;margin:0px"><font face=3D"verdana, sans-serif" color=3D"#000000=
+"><span style=3D"background-color:transparent;font-variant-numeric:normal;f=
+ont-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"=
+>Email your referral to the recruitment team </span><span style=3D"backgrou=
+nd-color:transparent;font-weight:bold;font-variant-numeric:normal;font-vari=
+ant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap">@ <a hr=
+ef=3D"mailto:referral@galaxyweblinks.in" target=3D"_blank">referral@galaxyw=
+eblinks.in</a></span><span style=3D"background-color:transparent;font-varia=
+nt-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;wh=
+ite-space:pre-wrap"> with name of candidate and designation as subject.</sp=
+an></font></p><p dir=3D"ltr" style=3D"line-height:1.38;margin:0px"><font fa=
+ce=3D"verdana, sans-serif" color=3D"#000000">=C2=A0</font></p><p dir=3D"ltr=
+" style=3D"line-height:1.38;margin:0px"><span style=3D"background-color:tra=
+nsparent;font-weight:bold;font-variant-numeric:normal;font-variant-east-asi=
+an:normal;vertical-align:baseline;white-space:pre-wrap"><font face=3D"verda=
+na, sans-serif" color=3D"#000000">We look forward to your referral !</font>=
+</span></p></div></div><font face=3D"verdana, sans-serif" color=3D"#000000"=
+><br class=3D"gmail-Apple-interchange-newline"></font></div><div><br></div>=
+<div><br></div><br clear=3D"all"><div><br></div>-- <br><div dir=3D"ltr" cla=
+ss=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr">=
+<font face=3D"verdana, sans-serif">Regards</font><div><font face=3D"verdana=
+, sans-serif">Sonika Shrivatri</font></div><div><font face=3D"verdana, sans=
+-serif">Sr. Manager - HR<br></font><font face=3D"verdana, sans-serif">Galax=
+y Weblinks Limited<br><a href=3D"http://www.galaxyweblinks.com" target=3D"_=
+blank">www.galaxyweblinks.com</a></font><br></div></div></div></div>
+
+--00000000000098b55405bf87a104--

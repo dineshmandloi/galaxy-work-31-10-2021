@@ -1,0 +1,86 @@
+@import 'config';
+@import 'utilities';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: $dark-color;
+}
+
+ul {
+    list-style: none;
+}
+
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 70px;
+    height: 70px;
+    text-transform: uppercase;
+    color: white
+}
+
+
+/*main nav*/
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 16px 24px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        border-bottom: 3px transparent solid;
+        padding-bottom: 8px;
+        transition: border-color 0.5s;
+        &:hover {
+            border-color: $medium-color;
+        }
+        &.current {
+            border-color: $main-color;
+        }
+    }
+}
+
+
+/*header*/
+
+#header {
+    &-home {
+        background: $bg-image no-repeat center right/cover;
+        height: 100vh;
+        color: white;
+        .header-content {
+            text-align: center;
+            padding-top: 12%;
+            h1 {
+                font-size: 64px;
+                line-height: 1.2;
+            }
+        }
+    }
+    &-inner {}
+}
